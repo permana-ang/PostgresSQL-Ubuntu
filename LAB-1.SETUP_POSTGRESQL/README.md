@@ -1,7 +1,7 @@
 LAB 1. SETUP POSTGRESQL
-1.1 Instalasi
-1.2 Akses Databases
-1.3 Setting Environment Variable
+#1.1 Instalasi
+#1.2 Akses Databases
+# 1.3 Setting Environment Variable
 
 ## 1.1 Instalasi
 
@@ -15,6 +15,5 @@ sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail htt
 sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 sudo apt update
 
-## Instalasi PostgreSQL
-```bash
-sudo apt -y install postgresql-17
+Instalasi PostgreSQL
+```sudo apt -y install postgresql-17
