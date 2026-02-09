@@ -15,5 +15,6 @@ sudo curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail htt
 sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $VERSION_CODENAME-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 sudo apt update
 
-# Instalasi PostgreSQL
+## Instalasi PostgreSQL
+```bash
 sudo apt -y install postgresql-17
