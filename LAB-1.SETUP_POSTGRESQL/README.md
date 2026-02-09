@@ -16,4 +16,9 @@ sudo sh -c "echo 'deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresq
 sudo apt update
 
 Instalasi PostgreSQL
-```sudo apt -y install postgresql-17
+sudo apt -y install postgresql-17
+
+Verifikasi setelah instalasi:
+
+```bash
+systemctl status postgresql
