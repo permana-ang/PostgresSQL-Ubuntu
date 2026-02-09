@@ -16,6 +16,7 @@ sudo apt update
 # Instalasi PostgreSQL:
 sudo apt -y install postgresql-17```
 
+
 Verifikasi setelah instalasi:
 
 ```systemctl status postgresql```
