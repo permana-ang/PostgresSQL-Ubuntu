@@ -24,4 +24,31 @@ sudo apt update
 sudo apt -y install postgresql-17
 ````
 
+## Verifikasi setelah instalasi:
+
+```bash
+systemctl status postgresql
+````
+
+## Lokasi data directory:
+
+```bash
+ls /var/lib/postgresql/17/main/
+````
+
+## Lokasi file konfigurasi:
+
+```bash
+ls /etc/postgresql/17/main/
+````
+
+## Lokasi file log:
+
+```bash
+tail -f /var/log/postgresql/postgresql-17-main.log
+````
+
+
+
+
 
