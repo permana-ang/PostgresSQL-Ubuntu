@@ -128,6 +128,81 @@ pg_ctl -D training/ status
 
 # 2.3 Konfigurasi
 
+Konfigurasi postgreSQL bisa dilakukan dengan dua cara. Pertama, konfigurasi langsung dijalankan pada prompt postgreSQL. Kedua, konfigurasi pada file postgresql.conf. Dan disarankan untuk menggunakan cara yang kedua, karena lebih lengkap, permanen, dan tercatat dengan baik.
+
+Konfigurasi langsung pada prompt postgreSQL:
+
+```bash
+show all;
+show port;
+show work_mem;
+show data_directory;
+show config_file;
+set work_mem = 8096;
+alter system set work_mem=8192;
+select pg_reload_conf();
+```
+
+Konfigurasi pada file:
+```bash
+vim /etc/postgresql/17/main/postgresql.conf
+```
+
+Sesuaikan beberapa parameter berikut:
+```bash
+# Koneksi dan port
+listen_addresses = '*'
+port = 5432
+max_connections = 200
+# Keamanan dan Autentikasi
+superuser_reserved_connections = 10
+authentication_timeout = 10s
+# Write Ahead Log
+max_wal_size = 1GB
+min_wal_size = 80MB
+# Pengaturan Log
+log_directory = 'log'
+log_min_duration_statement = 5000
+log_connections = on
+```
+
+# 2.4 Databases Management
+## 2.4.1 Databases
+
+Masuk ke prompt psql terlebih dahulu. Kemudian lihat database:
+```bash
+\l
+```
+
+Buat database:
+```bash
+create database training;
+```
+
+Ubah nama database:
+```bash
+ALTER DATABASE training
+RENAME TO training_db;
+```
+
+Membuat database dari template atau database yang sudah ada:
+```bash
+create database training_db_new with template training_db;
+```
+
+Gunakan database:
+```bash
+\c training_db;
+```
+
+Hapus database:
+```bash
+drop database training_db_new;
+```
+
+# 2.4.2 User & Roles
+
+
 
 
 
