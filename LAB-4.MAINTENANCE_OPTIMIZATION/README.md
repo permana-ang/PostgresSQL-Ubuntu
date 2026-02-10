@@ -8,6 +8,8 @@
 # 4.1 Dashboard
 Install pgAdmin pada windows/macOS/linux melalui link berikut:
 
+https://www.pgadmin.org/download/
+
 Setelah berhasil didownload, pasang aplikasi tersebut dan lakukan koneksi ke postgreSQL.
 
 # 4.2 Vacuum
