@@ -12,6 +12,6 @@
 ### 2.4.6 Data
 ### 2.4.7 View
 ## 2.5 Databases Security
-    2.5.1 Host Based Access (HBA)
-    2.5.2 Row Level Security
-    2.5.3 Data Encryption
+### 2.5.1 Host Based Access (HBA)
+### 2.5.2 Row Level Security
+### 2.5.3 Data Encryption
