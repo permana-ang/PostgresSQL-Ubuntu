@@ -19,6 +19,7 @@
 
 # 2.1 Operasi Dasar (CLI)
 Download sampel sebelum memulai lab:
+
 https://github.com/IDN-Training/postgresql-training/blob/main/sample/training_data.sql
 
 Setelah berhasil didownload ke dalam server, import file SQL tersebut:
