@@ -88,12 +88,14 @@ Inisialisasi atau buat cluster dengan perintah berikut:
 initdb -D training
 ```
 Keterangan: training adalah nama cluster, sekaligus folder yang akan dibuat
-Buka konfigurasi database cluster dan ganti port yang digunakan:
-```bash
-Buka konfigurasi database cluster dan ganti port yang digunakan:
-```
-Ubah pada parameter port seperti berikut:
 
+Buka konfigurasi database cluster dan ganti port yang digunakan:
+
+```bash
+vim training/postgresql.conf
+```
+
+Ubah pada parameter port seperti berikut:
 ```bash
 port = 5433
 ```
